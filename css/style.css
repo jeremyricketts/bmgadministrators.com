@@ -9,6 +9,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
 /* line 11, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-normalize-plugin-0.4.2/scss/normalize/_html5.scss */
 article,
 aside,
@@ -416,4 +417,97 @@ textarea {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* line 13, ../sass/style.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/style.scss */
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+
+/* line 18, ../sass/style.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 25, ../sass/style.scss */
+body {
+  background-image: url(/img/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #535353;
+}
+
+/* line 32, ../sass/style.scss */
+a, a:visited {
+  color: #4c7aa7;
+}
+
+/* line 35, ../sass/style.scss */
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 5rem .5rem 1rem .5rem;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: -0.035rem;
+  line-height: 2.8rem;
+}
+/* line 44, ../sass/style.scss */
+h1 span {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+  font-weight: normal;
+  opacity: .6;
+  letter-spacing: 0.5rem;
+}
+
+/* line 52, ../sass/style.scss */
+.tag {
+  font-family: georgia, serif;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 0 1rem 4rem 1rem;
+  font-weight: lighter;
+}
+
+/* line 61, ../sass/style.scss */
+.content {
+  width: 95%;
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: .5rem;
+}
+/* line 70, ../sass/style.scss */
+.content em {
+  background: #fcffc2;
+  font-style: normal;
+}
+/* line 74, ../sass/style.scss */
+.content .contact {
+  padding-left: 1rem;
+  border-left: 2px solid #e6e6e6;
+}
+
+/* line 79, ../sass/style.scss */
+.footer {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+}
+/* line 83, ../sass/style.scss */
+.footer a, .footer a:visited {
+  color: #fff;
 }

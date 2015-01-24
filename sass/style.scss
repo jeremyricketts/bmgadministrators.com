@@ -3,5 +3,84 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+// ========= BOILER PLATE =========
+
+// Normalize for Compass: https://github.com/jzorn/compass-normalize-plugin
 @import "normalize";
 @include normalize;
+
+// Border-box: (http://learnlayout.com/box-sizing.html)
+*, *:before, *:after { 
+	box-sizing: border-box;
+}
+// Clearfix. (http://nicolasgallagher.com/micro-clearfix-hack/)
+.cf:before, .cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+
+// ========= SITE SPECIFIC =========
+
+// Google font
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
+
+body { 
+    background-image:url(/img/bg.jpg);     
+    background-size: cover;     
+    background-attachment: fixed;
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#535353;
+}
+a, a:visited {
+    color:#4c7aa7;
+}
+h1 {
+    color:#fff;
+    text-align: center;
+    margin:5rem .5rem 1rem .5rem;
+    font-weight: 300;
+    //text-shadow: 0 0 10px #666;
+    font-size: 3rem;
+    letter-spacing:-0.035rem;
+    line-height: 2.8rem;
+    span {
+        font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+        font-style: italic;
+        font-weight: normal;
+        opacity:.6;
+        letter-spacing:0.5rem;
+    }
+}
+.tag {
+    font-family: georgia, serif;
+    font-style: italic;
+    color:#fff;
+    text-align: center;
+    font-size: 1.3rem;
+    margin:0 1rem 4rem 1rem;
+    font-weight: lighter;
+}
+.content {
+    width:95%;
+    max-width:700px;
+    margin:0 auto;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    background:#fff;
+    padding:2rem 3rem;
+    border-radius:.5rem;
+    em {
+        background:#fcffc2;
+        font-style: normal;
+    }
+    .contact {
+        padding-left:1rem;
+        border-left:2px solid #e6e6e6;
+    }
+}
+.footer {
+    color:#fff;
+    text-align: center;
+    font-size: 1.3rem;
+    a, a:visited {
+        color:#fff;
+    }
+}
