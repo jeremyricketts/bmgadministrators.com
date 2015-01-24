@@ -437,7 +437,7 @@ table {
 
 /* line 25, ../sass/style.scss */
 body {
-  background-image: url(/bg.jpg);
+  background-image: url(../bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Source Sans Pro', sans-serif;
