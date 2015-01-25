@@ -1,0 +1,14 @@
+<!--  
+'timer' :: number of seconds between each image transition
+'order' :: how you want your images displayed. choose either 'sequential' or 'random'
+'looping' :: if the slide show is in sequential mode, this stops the show at the last image (use 'yes' for looping, 'no' for not)
+'fadeTime' :: velocity of image crossfade. Increment for faster fades, decrement for slower. Approximately equal to seconds.
+'xpos' :: _x position of all loaded clips (0 is default)
+'ypos' :: _y position of all loaded clips (0 is default)
+-->
+<gallery timer="3" order="sequential" fadetime="1" looping="no" xpos="0" ypos="0">
+<image path="slides/med1.jpg" />
+<image path="slides/med2.jpg" />
+<image path="slides/med3.jpg" />
+<image path="slides/med4.jpg" />
+</gallery>

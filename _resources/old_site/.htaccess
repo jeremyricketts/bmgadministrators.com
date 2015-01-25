@@ -1,0 +1,26 @@
+# RewriteEngine on
+# RewriteCond %{http_host} ^www.bmgadministrators.com [nc]
+# RewriteRule ^(.*)$ https://bmgadministrators.com/$1 [r=301,nc] 
+
+#rewritecond %{http_host} ^bmgadministrators.com [nc]
+#rewriterule ^(.*)$ https://bmgadministrators.com/$1 [r=301,nc]
+
+#rewritecond %{http_host} ^bmgadministrators.com [nc]
+#rewriterule ^(.*)$ https://bmgadministrators.com/$1 [r=301,nc]
+
+#rewritecond %{http_host} ^www.bmgadministrators.com [nc]
+#rewriterule ^(.*)$ https://bmgadministrators.com/$1 [r=301,nc]
+
+# RewriteEngine On
+# RewriteCond %{SERVER_PORT} !443
+# RewriteRule (.*) https://bmgadministrators.com/ [R]
+
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^/(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+

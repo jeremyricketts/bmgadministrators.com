@@ -1,0 +1,210 @@
+/*================================================================
+LAYOUT stylesheet for the website.
+
+Define layout and backgrounds for:
+  - (list pages here)
+  - (list pages here)
+  - (list pages here)
+  - (list pages here)
+  ( Navigation is defined in nav.css )
+  
+  ***  NO TYPOGRAPHY STYLES HERE PLEASE  ***
+  
+================================================================*/
+
+
+/* BODY 
+----------------------------------------------------------------*/
+body {
+	}
+
+/* WRAPPER-TOP
+----------------------------------------------------------------*/
+#wrapper-top {
+	background:url(../images/wrapper-top-bg.gif) repeat-x center bottom;
+	font-size:95%;
+	}	
+
+/* MAST
+----------------------------------------------------------------*/
+#mast {
+		/*background-color:aqua;*/
+	width:750px;
+	margin: 0 auto;
+	}	
+	
+/* BANNER
+----------------------------------------------------------------*/
+#banner {
+	width:750px;
+	margin: 10px auto;
+	}
+
+	.banner-index {
+		background:url(../images/banner-white.gif) no-repeat center top;
+		height:260px;
+		}
+	.banner-contact {
+		background:url(../images/banner-contact.gif) no-repeat center top;
+		height:140px;
+		}
+	.banner-medical {
+		background:url(../images/banner-white.gif) no-repeat center top;
+		height:260px;
+		}
+	.banner-medical-ap {
+		background:url(../images/banner-medical-ap.gif) no-repeat center top;
+		height:120px;
+		}
+	.banner-dental {
+		background:url(../images/banner-white.gif) no-repeat center top;
+		height:260px;
+		}
+	.banner-dental-ap {
+		background:url(../images/banner-dental-ap.gif) no-repeat center top;
+		height:120px;
+		}
+	.banner-vision {
+		background:url(../images/banner-white.gif) no-repeat center top;
+		height:260px;
+		}
+	.banner-vision-ap {
+		background:url(../images/banner-vision-ap.gif) no-repeat center top;
+		height:120px;
+		}
+	.banner-chiropractic {
+		background:url(../images/banner-white.gif) no-repeat center top;
+		height:260px;
+		}
+	.banner-chiropractic-ap {
+		background:url(../images/banner-chiropractic-ap.gif) no-repeat center top;
+		height:120px;
+		}
+	.banner-thanks-contact {
+		background:url(../images/thanks-contact.gif) no-repeat center top;
+		height:140px;
+		}
+	.banner-thanks-ap {
+		background:url(../images/thanks-ap.gif) no-repeat center top;
+		height:140px;
+		}
+	.banner-thanks-quote {
+		background:url(../images/thanks-quote.gif) no-repeat center top;
+		height:140px;
+		}
+		
+/* WRAPPER-SUBNAV
+----------------------------------------------------------------*/
+#wrapper-subnav {
+		background:url(../images/wrapper-bottom-bg.gif) repeat-x center bottom;
+	text-align:center;
+	height:59px;
+	}	
+
+/* SUBNAV
+----------------------------------------------------------------*/	
+#subnav {
+	width:730px;
+	margin:0 auto;
+	}
+
+
+/* CONTENT
+----------------------------------------------------------------*/
+#content {
+	text-align:left;
+	width:750px;
+	margin: 0 auto;
+	}
+	
+/* APPLICATION PAGES
+----------------------------------------------------------------*/
+#apptop {
+	background:url(../images/app-top-bg.gif) no-repeat center top;
+	width:750px;
+	margin: 0 auto;
+	height:22px;
+	}
+#applicationwrapper {
+	text-align:center;
+	background:url(../images/app-center-bg.gif) repeat-y center top;
+	width:750px;
+	margin: 0 auto;
+	}
+#application {
+	text-align:left;
+	margin-left:20px;
+	margin-right:20px;
+	}
+#appbottom {
+	background:url(../images/app-bottom-bg.gif) no-repeat center top;
+	width:750px;
+	margin: 0 auto;
+	height:22px;
+	}
+
+/* LIGHTBOXES
+----------------------------------------------------------------*/
+#lb1_content {
+	padding:20px 25px;
+	}
+
+/* FOOTER
+----------------------------------------------------------------*/
+#footer {
+	/*margin-top:30px;*/
+	background:url(../images/footer-bg.gif) repeat-x center top;
+	border-top:solid 1px #CCCCCC;
+	height:30px;
+	padding-top:5px;
+	text-align:center;
+	}
+#footer p {
+	margin:5px 0 5px 0;
+	}
+
+/* CONTACT FORM
+----------------------------------------------------------------*/	
+#contactform {
+		/*background:aqua;*/
+	width:730px;
+	margin:0 auto;
+	color:#FFFFFF;
+	}
+
+#right_contact {
+	width:43%;
+	height:590px;
+	padding:0 20px 0 30px;
+	/*background:red;*/
+	background:#FFFFFF url(../images/bg-tall.jpg) no-repeat left top;
+	float:right;
+	text-align:left;
+	}
+#right_contact input {
+	display:inline-block;
+	}
+
+	
+#left_contact {
+	width:43%;
+	height:590px;
+	padding:0 20px 0 30px;
+	/*background:orange;*/
+	background:#FFFFFF url(../images/bg-tall.jpg) no-repeat left top;
+	float:left;
+	text-align:left;
+	}
+	
+	
+/* VALIDATION ERROR
+----------------------------------------------------------------*/	
+#errorDiv {
+	border:3px #FF0000 solid;
+	padding:10px;
+	text-align:center;
+	background-color:#FFD2D2;
+	display:inline-block;
+	width:700px;
+	margin:0 auto;
+	}

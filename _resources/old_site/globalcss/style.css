@@ -1,0 +1,493 @@
+/*================================================================
+The MAIN stylesheet for the website.
+
+Define SITE-WIDE styles:
+  - General Typography
+  - Header Content
+  - Sidebar Content
+  - Forms
+  - Tables
+  - Footer
+  - Sitewide Custom Definitions
+  
+================================================================*/
+
+@import url("base.css");
+@import url("layout.css");
+@import url("nav.css");
+
+
+/* GENERAL TYPOGRAPHY (Standard HTML tags)
+----------------------------------------------------------------*/
+html, body {
+	font-family: verdana, helvetica, sans-serif;
+	color:#333333;
+	}
+
+h1 {
+	text-align:left;
+	/*margin-bottom:10px;*/
+	}
+
+h2 {
+	color:#4B9AC2;
+	margin-left:10px;
+	/*letter-spacing: -1px;*/
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 170%;
+	font-weight:lighter;
+	}
+
+a:link, a:visited {
+	color:#4B9AC2;
+	}
+
+a:hover {
+	}
+
+
+/* FOOTER
+----------------------------------------------------------------*/
+#footer a:link, #footer a:visited {
+	text-decoration:none;
+	 }
+#footer a:hover {
+	text-decoration:underline;
+	 }
+
+
+/* CONTENT
+----------------------------------------------------------------*/
+#content {
+	}
+
+#content p {
+	margin:10px 10px 20px 10px;
+	}
+
+/* ==============================================================
+						FORMS
+================================================================*/
+
+/*  Contact Form Elements
+----------------------------------------------------------------*/
+#right_contact input, #right_contact select, #right_contact option, #right_contact textarea{
+	color:#333333;
+	padding:3px;
+	}
+
+fieldset {
+	border: 1px solid #AAA;
+	padding:10px;
+	}
+
+fieldset p {
+	margin: 4px 0;
+	}
+
+legend {
+	color:#FFFF66;
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 150%;
+	font-weight:lighter;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+input.text {
+	width: 290px;
+	} 
+
+input.textShort {
+	width: 80px;
+	}
+
+input.submit {
+	float: right;
+	}
+.namefield {
+	width:180px;
+	}
+.shortnamefield {
+	width:120px;
+	}
+.relationfield {
+	width:120px;
+	}
+
+input {
+	border:2px #898A8A solid;
+	padding:2px;
+	}
+input.noborder {
+	border:none;
+	}
+/* ==============================================================
+						TABLES
+================================================================*/	
+table {
+	clear: both;
+	border-collapse: collapse;
+	text-align: left;
+	}
+	
+td {
+	padding: 2px 3px;
+	font-size: small;
+	}
+
+/* ==============================================================
+						MISC
+================================================================*/	
+#buttons-blue {
+	text-align:left;
+	line-height:49px;
+	}
+#buttons-blue a:link, #buttons-blue a:visited {
+	/*height:49px;*/
+	padding:16px 35px 15px 35px;
+	/*width:114px;*/
+	color:#4B9AC2;
+	line-height:49px;
+	display:inline; /* block? */
+	overflow:hidden;
+	text-decoration:none;
+	background:url(../images/submit-blue.gif) no-repeat top center;
+	text-align:center;
+	}
+	#buttons-blue a:hover {
+		color:#FFFFFF;
+		background-position:center -49px;
+		}
+
+#buttons-grey {
+		padding-top:20px;
+	text-align:center;
+	line-height:49px;
+	}
+#buttons-grey a:link, #buttons-grey a:visited {
+	/*height:49px;*/
+	padding:16px 35px 15px 35px;
+	/*width:114px;*/
+	color:#4B9AC2;
+	line-height:49px;
+	display:inline; /* block? */
+	overflow:hidden;
+	text-decoration:none;
+	background:url(../images/submit-grey.gif) no-repeat top center;
+	text-align:center;
+	}
+	#buttons-grey a:hover {
+		color:#FFFFFF;
+		background-position:center -49px;
+		}
+
+#help_bug{
+	margin-left:10px;
+	color:#66FF99;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	font-size:100%;
+	font-weight:bold;
+	}
+	
+.tip_header {
+	width:160px;
+	background:#CCCCCC;
+	border:1px solid #C4D5E3;
+	padding:4px 10px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:80%;
+	text-align:left;
+	color:#666666;
+	font-weight:bold;
+	}
+.tip_body {
+	width:160px;
+	background:#E9EFF4;
+	border:1px solid #C4D5E3;
+	padding:10px;
+	margin-bottom:20;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:80%;
+	text-align:left;
+	}
+
+#dependents2_trigger a:link, #dependents2_trigger a:visited {
+	color:#fff;
+	text-decoration:none;
+	}
+	#dependents2_trigger a:hover {
+	text-decoration:underline;
+	}
+
+.firstpageheading {
+	text-align:center;
+	color:#999999;
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 170%;
+	font-weight:lighter;
+	}
+.quote {
+	color:#999999;
+	font-style:italic;
+	padding:0 40px 10px 40px;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	font-size:16px;
+	line-height:1.35em;
+	/*background:#fff url(../images/quote-bg.gif) no-repeat center bottom;*/
+	}
+.quote span {
+	color:#A82A2F;
+	}
+p.benefitslinks {
+	text-align:center;
+	margin-top:0;
+	}
+p.benefitslinks a:link, p.benefitslinks a:visited{
+	text-decoration:none;
+	}
+p.benefitslinks a:hover {
+	text-decoration:underline;
+	}
+
+.subh2 {
+	color:#999999;
+	text-align:center;
+	/*letter-spacing: -1px;*/
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 170%;
+	font-weight:lighter;
+	text-decoration:underline;
+	margin:0;padding:0;
+	}
+.dental_heading {
+	color:#000000;
+	text-align:center;
+	/*letter-spacing: -1px;*/
+    font-size: 120%;
+	font-weight:lighter;
+	}
+
+/* ==============================================================
+						CONTACT
+================================================================*/	
+#left_contact h3 {
+	margin-top:15px;
+	color:#FFFFFF;
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 170%;
+	font-weight:lighter;
+	}
+#left_contact a:link, #left_contact a:visited {
+	color:#FFFFFF;
+	text-decoration:none;
+	}
+	#left_contact a:hover {
+	text-decoration:underline;
+	}
+	#left_contact p {
+	margin-top:5px;
+	margin-bottom:0;
+	}
+#right_contact h3 {
+	margin-top:30px;
+	margin-bottom:10px; /*it has no h3's below it to seperate*/
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 170%;
+	font-weight:lighter;
+	}
+#right_contact input {
+	width:80%;
+	border:2px #CCCCCC solid;
+	}
+#right_contact textarea {
+	color:#333333;
+	padding:3px;
+	width:80%;
+	overflow:hidden;
+	font-family: verdana, helvetica, sans-serif;
+	font-size:small;
+	border:2px #CCCCCC solid;
+	}
+#right_contact p {
+	margin-top:10px;
+	}
+
+/* ==============================================================
+						APPLICATION PAGE STYLES
+================================================================*/	
+#application {
+	color:#fff;
+	padding-bottom:20px;
+	}
+
+#application h2 {
+	text-align:center;
+	color:#fff;
+	/*letter-spacing: -1px;*/
+    font-family: "Trebuchet MS",Tahoma,Arial;
+    font-size: 170%;
+	font-weight:lighter;
+	}
+#application h3 {
+	text-align:center;
+	font-size:140%;
+	color:#CCCCCC;
+	font-family: "Trebuchet MS",Tahoma,Arial;
+	font-weight:lighter;
+	}
+#application p {
+	padding-bottom:10px;
+	color:#fff;
+	}
+#terms {
+	text-align:center;
+	}
+#terms p {
+	color:#fff;
+	}
+#terms a:link, #terms a:visited {
+	color:#fff;
+	text-decoration:underline;
+	font-weight:bold;
+	font-variant:small-caps;
+	}
+	#terms a:hover {
+		text-decoration:none;
+		}
+#dentists {
+	color:#fff;
+	}
+#dentists a:link, #dentists a:visited {
+	color:#fff;
+	text-decoration:underline;
+	}
+	#dentists a:hover {
+		text-decoration:none;
+		}
+#sub-app-heading {
+	text-align:center;
+	color:#F0F0F0;	
+	padding-bottom:15px;
+	}
+#sub-app-heading a:link, #sub-app-heading a:visited {
+	color:#FFFF33;
+	text-decoration:underline;
+	}
+	#sub-app-heading a:hover {
+			text-decoration:none;
+			}
+
+/* ==============================================================
+						Agreement
+================================================================*/
+#agreement {
+	background:#CCCCCC;
+	color:#333333;
+	padding:10px 30px;
+	font-size:85%;
+	height:80px;
+	overflow:auto;
+	}
+#agreement p {
+	color:#333333;
+	margin-top:10px;
+	}
+#agreement ul {
+	margin-left:30px;
+	}
+#agreement li {
+	padding-bottom:3px;
+
+	}
+p.agreement_heading {
+	font-size:120%;
+	border-bottom:1px #666666 solid;
+	}
+	
+/* ==============================================================
+						Content LI
+================================================================*/
+
+#content ul {
+	margin-left:60px;
+	margin-right:60px;
+	margin-bottom:20px;
+	}
+#content ul li {
+	list-style:none;
+	background: url(../images/button.gif) no-repeat left 6px ;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	}
+
+/* ==============================================================
+						Dental Section
+================================================================*/
+
+h2.which_plan {
+	display:block;
+	background:url(../images/which_plan.gif) no-repeat center center;
+	height:100px;
+	text-indent:-99999px;
+	}
+
+#dental_menu {
+	margin:20px 0;
+	}
+#dental_menu td {
+	text-align:center;
+	}
+#dental_menu a span {
+	font-size:20px;
+	}
+#hmo {
+	background:#F6F6F6;
+	border:1px #CCCCCC solid;
+	padding:20px 0;
+	}
+	
+#ppo_in {
+	background:#F6F6F6;
+	border:1px #CCCCCC solid;
+	padding:20px 0;
+	}
+	
+#ppo_out {
+	background:#F6F6F6;
+	border:1px #CCCCCC solid;
+	padding:20px 0;
+	}
+
+.faq, #hmo h3, #ppo_in h3, #ppo_out h3 {
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	letter-spacing:-1px;
+	}
+.dental_q {
+	font-size:20px;
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	}
+.dental_a {
+	border-left:4px #CCCCCC solid;
+	padding:12px;
+	}
+
+/* ==============================================================
+						Vision AND Chiro FAQ Section
+================================================================*/
+
+#faqwrap {
+	background:#F6F6F6;
+	border:1px #CCCCCC solid;
+	padding:20px 0;
+	}
+.faq, #hmo h3, #ppo_in h3, #ppo_out h3, #faqwrap h3 {
+	font-weight:bold;
+	font-size:20px;
+	text-align:center;
+	letter-spacing:-1px;
+	}

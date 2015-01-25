@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<?php $thisPage="Contact Us"; ?>
+<head>
+<?php include("_html_head.php"); ?>
+<?php include("_js_moo_and_boxover.php"); ?>
+<script type="text/javascript" src="validation/validation_functions.js"></script>
+<script type="text/javascript" src="validation/contact.js"></script>
+</head>
+<body>
+	
+<div id="wrapper-top">
+
+<div id="mast">
+<h1><a href="index.php" title="home"><img src="images/logo.gif" alt="Benefits Management Group" /></a></h1>
+	<ul id="nav">
+		<li><a href="index.php" id="navIndex">Home</a></li>
+		<li><a href="contact.php" id="navContact" class="current">Contact</a></li>
+		<li><a href="medical.php" id="navMedical">Medical</a></li>
+		<li><a href="dental.php" id="navDental">Dental</a></li>
+		<li><a href="vision.php" id="navVision">Vision</a></li>
+		<li><a href="chiropractic.php" id="navChiropractic">Chiropractic</a></li>
+	</ul>
+</div><!-- /mast  -->
+
+</div><!-- /wrapper-top -->
+
+<div id="banner" class="banner-contact"><!-- /SPECIFIC TO THIS PAGE -->
+</div><!-- banner  -->
+
+<div id="content">
+	<h2>Contact Us</h2>
+</div><!-- /index-content -->
+<div id="errorDiv" style="display:none;">
+</div><!-- /errorDiv -->
+<!-- Form Action  -->
+<form name="contactform" action="action_contact.php" method="post">
+<!-- /Form Action  -->
+<div id="contactform">
+	<div id="left_contact">
+		<h3 style="margin-top:30px;">By Phone:</h3>
+		<p>Local: (951) 684-0211</p>
+		<p>Toll free: (800) 843-2752</p>
+		<h3>By Email:</h3>
+		<p>General/Office: </p>
+		<p style="margin-left:20px;"><a href="#">email@bmgadministrators.com</a></p>
+		<p>Billing Questions: </p>
+		<p style="margin-left:20px;"><a href="#">billing@bmgadministrators.com</a></p>
+		<h3>By Fax:</h3>
+		<p>(951) 787-9273</p>
+		<h3>By Mail:</h3>
+		<p>3740 Elizabeth Street<br />Riverside, CA 92506</p>
+		<h3>In Person:</h3>
+		<p>Feel free to visit us! If possible, please call ahead of time and schedule an appointment so we can server you better.</p>
+		<p style="text-align:center;margin-top:20px;">( <a href="http://maps.google.com/?q=3740+Elizabeth+St,+Riverside,+CA+92506&ie=UTF8&z=15&om=1&iwloc=A" target="_blank">Map</a> )</p>
+	</div><!-- /left_contact  -->
+<div id="right_contact">
+	<h3>Online Inquiry Form:</h3>
+	<p><label for="name">Name:</label><br />
+	<input name="name" type="text" class="formtext" id="name"/></p>
+	
+	<p><label for="email">Email:</label><br />
+	<input name="email" type="text" class="formtext" id="email"/></p>
+	
+	<p><label for="email2">Confirm Email:</label><br />
+	<input name="email2" type="text" class="formtext" id="email2"/></p>
+			
+	<p><label for="phone">Phone:</label><br />
+	<input name="phone" type="text" class="formtext" id="phone"/></p>
+
+	<p><label for="route">How should we route your inquiry?</label><br />
+	<select name="route" size="1" class="formtext" id="route"/>
+		<option class="formtext" value="(select)" selected="selected">(select)</option>
+		<option class="formtext" value="Questions about Medical Insurance">Questions about Medical Insurance</option>
+		<option class="formtext" value="Questions about Dental Insurance">Questions about Dental Insurance</option>
+		<option class="formtext" value="Questions about Vision Insurance">Questions about Vision Insurance</option>
+		<option class="formtext" value="Questions about Chiropractic Insurance">Questions about Chiropractic Insurance</option>
+		<option class="formtext" value="Questions about current BMG policy">Questions about your current policy</option>
+		<option class="formtext" value="Other">Other</option>
+	</select></p>
+
+	<p><label for="themessage">Your Inquiry:</label><br />
+		<textarea class="themessage" rows="7" id="themessage"></textarea></p>
+	<p id="buttons-blue"><a href="javascript:submitForm();">Send</a></p>
+	<!-- <p><a href="#" onclick="javascript:validateForm()"><img src="images/##.gif" align="left" border="0"/></a></p> -->
+</form>
+</div><!-- /right_contact  -->
+</div><!-- /contactform -->
+
+<?php include("_footer.php"); ?>
+
+</body>
+</html>

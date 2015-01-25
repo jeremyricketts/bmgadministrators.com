@@ -1,0 +1,123 @@
+/*================================================================
+		TOP NAV
+================================================================*/
+
+#nav {
+	height: 29px;
+	list-style: none;
+	}
+#nav li {
+	float: left;
+	height: 29px;
+	overflow: hidden; /* if text-resize, this'll keep the nav the same size */
+	}
+#nav li a {
+	display: block;
+	line-height: 29px;
+	text-indent: -5000px;
+	overflow: hidden;
+	background-position: left top; /* puts the background image top left*/
+	}
+	#navIndex {
+		width: 109px;
+		background: url(../images/nav-index.gif) no-repeat;
+		}
+	#navContact {
+		width: 110px;
+		background: url(../images/nav-contact.gif) no-repeat;
+		margin-right:90px;
+		}
+	#navMedical {
+		width: 109px;
+		background: url(../images/nav-medical.gif) no-repeat;
+		}
+	#navDental {
+		width: 109px;
+		background: url(../images/nav-dental.gif) no-repeat;
+		}
+	#navVision {
+		width: 109px;
+		background: url(../images/nav-vision.gif) no-repeat;
+		}
+	#navChiropractic {
+		width: 110px;
+		background: url(../images/nav-chiropractic.gif) no-repeat;
+		}
+#nav li a:hover {
+	background-position: 0 -29px;
+	}
+	#nav li a.current,
+	#nav li a.current:hover {
+		background-position: 0 -58px;
+		}
+		
+/*================================================================
+		SUB NAV
+================================================================*/
+#subnav {
+	height: 30px;
+	list-style: none;
+	}
+#subnav li {
+	float: left;
+	height: 30px;
+	overflow: hidden; /* if text-resize, this'll keep the nav the same size */
+	}
+#subnav li a {
+	display: block;
+	line-height: 30px;
+	text-indent: -5000px;
+	overflow: hidden;
+	background-position: left top; /* puts the background image top left*/
+	}
+	#subnavPi {
+		width: 194px;
+		background: url(../images/nav-sub-pi.gif) no-repeat;
+		/*margin-left:200px;*/
+		}
+	#subnavApply {
+		width: 195px;
+		background: url(../images/nav-sub-apply.gif) no-repeat;
+		}
+	#subnavApply1 {
+		width: 194px;
+		background: url(../images/nav-sub-apply.gif) no-repeat;
+		}
+	#subnavApply2 {
+		width: 195px;
+		background: url(../images/nav-sub-apply.gif) no-repeat;
+		}
+	#subnavMedApply1 {
+		width: 194px;
+		background: url(../images/nav-sub-med-apply1.gif) no-repeat;
+		}
+	#subnavMedApply2 {
+		width: 195px;
+		background: url(../images/nav-sub-med-apply2.gif) no-repeat;
+		}
+	#subnavDentApply1 {
+		width: 194px;
+		background: url(../images/nav-sub-dent-apply1.gif) no-repeat;
+		}
+	#subnavDentApply2 {
+		width: 195px;
+		background: url(../images/nav-sub-dent-apply2.gif) no-repeat;
+		}
+#subnav li a:hover {
+	background-position: 0 -30px;
+	}
+	#subnav li a.current,
+	#subnav li a.current:hover {
+		background-position: 0 -60px;
+		}
+
+/*================================================================
+		FOOTER NAV
+================================================================*/
+#footer ul{
+	text-align:center;
+	list-style:none;
+	 }
+#footer li {
+ 	display:inline;
+	 }
